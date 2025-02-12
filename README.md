@@ -22,6 +22,7 @@ The idea is to run the Express-based REST API and then run each of the two versi
 - Run `node app.js` to start the service
 - If successful, the service will start listening at http://localhost:3000
 
+
 The API has three endpoints:
 `POST /todos`: Create a new todo item with the following request body:
 ```json
@@ -33,6 +34,7 @@ The API has three endpoints:
 ```
 
 `GET /todos`: Retrieve all todo items
+
 `DELETE /todos/{id}`: Delete a todo item by its ID
 
 ### 2. Run the GraphQL Mesh Issue project
@@ -40,7 +42,7 @@ The API has three endpoints:
 - Change to the `mesh-redirect-issue` directory
 - Run `npm install` to restore packages
 - Run `npm run start` to build and launch the Mesh service
-- The service should start listening at 
+- The service should start listening at localhost:4000/graphql
 
 Observe the error by issuing the following mutation:
 ```graphql
@@ -142,6 +144,7 @@ The response shows:
 
 ### 3. Run the GraphQL Mesh Fix project
 - Stop and restart the Todo API service to get a fresh start
+- Probably stop the other GraphQL Mesh project
 - In a second terminal, change to the `mesh-redirect-fix` directory
 - Run `npm install` to restore packages
 - Run `npm run start` to build and start the GraphQL Mesh project

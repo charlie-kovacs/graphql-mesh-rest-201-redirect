@@ -1,5 +1,5 @@
 {
-  "name": "405-fix",
+  "name": "mesh-redirect-fix",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {

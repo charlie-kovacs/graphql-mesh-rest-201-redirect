@@ -24,6 +24,7 @@ The idea is to run the Express-based REST API and then run each of the two versi
 
 
 The API has three endpoints:
+
 `POST /todos`: Create a new todo item with the following request body:
 ```json
 {
